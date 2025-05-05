@@ -1,4 +1,3 @@
-# This is example code.
-# This will be executed when this module is initialized during Zsh startup.
-
-print "executed code in ${0}"
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init - zsh)"
